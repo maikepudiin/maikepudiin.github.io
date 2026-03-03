@@ -114,7 +114,8 @@
 <section id="team" class="team-section">
 
   <h2 class="team-title">OUR TEAM</h2>
-
+  <div class="team-box">
+    
   <div class="team-container">
 
     <div class="team-member">
@@ -124,6 +125,7 @@
         <p>Creator, Director, Main Programmer</p>
       </div>
     </div>
+  </div>
 
     
     <div class="team-member">
@@ -155,18 +157,24 @@
   <style>
 /* SEÇÃO TEAM */
 .team-section {
-  padding: 120px 40px;
+  padding: 120px 0;
   text-align: center;
+}
+
+    /* CAIXA DO BALÃO */
+.team-box {
+
+  width: 80%;          /* NÃO ocupa tudo */
+  margin: 0 auto;      /* centraliza */
+  padding: 60px 40px;
 
   border-style: solid;
   border-color: transparent;
 
-  /* largura da borda */
-  border-width: 10px 80px 10px 80px;
-  /* topo  direita  baixo  esquerda */
+  /* Ajuste esses valores conforme sua sprite */
+  border-width: 60px 40px 60px 40px;
 
-  /* corte da imagem */
-  border-image: url("speech_balloon.png") 10 80 10 80 fill stretch;
+  border-image: url("speech_balloon.png") 60 40 60 40 fill stretch;
 
   box-sizing: border-box;
 }
