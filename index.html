@@ -98,7 +98,10 @@
 
   <!-- PARTES DO SITE -->
   <section id="home">
-    <h1>Peidei</h1>
+
+
+
+    
   </section>
 
   <section id="about">
@@ -106,7 +109,88 @@
   </section>
   <section id="characters"></section>
   <section id="newsletter"></section>
-  <section id="team"></section>
+
+  
+<section id="team" class="team-section">
+
+  <h2 class="team-title">TEAM</h2>
+
+  <div class="team-container">
+
+    <div class="team-member">
+      <img src="membro1.png" class="team-img">
+      <div class="team-info">
+        <h3>Nome do Integrante</h3>
+        <p>Função (Programador, Artista, etc)</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <img src="membro2.png" class="team-img">
+      <div class="team-info">
+        <h3>Nome do Integrante</h3>
+        <p>Função</p>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+/* SEÇÃO TEAM */
+.team-section {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+/* TÍTULO GRANDE */
+.team-title {
+  font-size: 80px;
+  color: #1e90ff; /* azul */
+
+  /* Outline preta */
+  -webkit-text-stroke: 3px black;
+
+  margin-bottom: 60px;
+}
+
+/* Container dos membros */
+.team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* Cada membro */
+.team-member {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Imagem */
+.team-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid black;
+}
+
+/* Texto do membro */
+.team-info h3 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.team-info p {
+  font-size: 20px;
+  margin: 5px 0 0 0;
+}
+
+    
+  </style>
+
+</section>
 
 </body>
 </html>
